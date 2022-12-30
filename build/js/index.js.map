@@ -1,1 +1,1 @@
-{"version":3,"sources":["script.js"],"names":["console","log"],"mappings":"AAAAA,QAAQC,IAAI","file":"index.js","sourcesContent":["console.log('Ajam')"]}
+{"version":3,"sources":["script.js"],"names":["console","log","a","b"],"mappings":"AAAAA,QAAQC,IAAI,QACZ,MAAMC,EAAI,MACJC,EAAI,QACVD,EAAI","file":"index.js","sourcesContent":["console.log('Ajam')\r\nconst a = 'siu'\r\nconst b = 'holii'\r\na = 'ajam';\r\n"]}
