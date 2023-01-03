@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.total-month {
+    font-size: 1.5rem;
+    
+    h3 {
+        margin: 0;
+        font-weight: v.$regular;
+        color: v.$Medium-brown;
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 2.5rem;
+
+        .last-month {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+            .porcentaje {
+                color: v.$Dark-brown;
+                font-weight: v.$bold;
+            }
+        }
+        .precio {
+            color: v.$Dark-brown;
+            margin: 0;
+            font-size: 3rem;
+        }
+    }
+}

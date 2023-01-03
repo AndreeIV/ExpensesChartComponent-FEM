@@ -1,26 +1,23 @@
 //! Fuentes
-$fuente_principal: 'Plus Jakarta Sans', sans-serif;
+$fuente_principal: 'DM Sans', sans-serif;
+$font-size: 18px;
 
 //! Tamaño de Media Queries
 $telefono: 375px;
 $desktop: 1440px;
 
-//! Neutral
-$White: hsl(0, 0%, 100%);
-$Very-light-grayish-blue: hsl(210, 60%, 98%);
-$Light-grayish-blue-1: hsl(211, 68%, 94%);
-$Light-grayish-blue-2: hsl(205, 33%, 90%); // 
-$Grayish-blue: hsl(219, 14%, 63%);
-$Dark-grayish-blue: hsl(219, 12%, 42%);
-$Very-dark-blue: hsl(224, 21%, 14%);
-
-
 //! Colores-Primarios
-$Red: hsl(1, 90%, 64%);
-$Blue: hsl(219, 85%, 26%);
+$Soft-red: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+//! Neutral
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very-pale-orange: hsl(33, 100%, 98%);
 
 //! Fuentes
-// $regular : 400;
-$normal: 500;
-// $bold: 700;
-$black: 800;
+$regular : 400;
+// $normal: 500;
+$bold: 700;
+// $black: 800;

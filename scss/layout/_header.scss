@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+body {
+    
+    background-color: v.$Cream;
+
+    @include m.desktop {
+        display: grid;
+        place-items: center;
+    }
+
+    .container  {
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+
+        padding: 0 1.5rem;
+    }
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: v.$Soft-red;
+    border-radius: 6px;
+    padding: 0 2rem;
+
+    .balance-price {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+        
+        color: v.$Very-pale-orange;
+        font-size: 1.5rem;
+
+        h3 {
+            font-weight: v.$regular;
+            margin: 0;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .circles {
+
+        @include m.center;
+
+        .circle-fill {
+            position: relative;
+            
+            width: 4rem;
+            height: 4rem;
+            
+            background-color: v.$Dark-brown;
+            border-radius: 50%;
+
+            @include m.center;
+            
+            .circle-empty {
+                position: absolute;
+                
+                width: 3.9rem;
+                height: 3.9rem;
+                
+                border-radius: 50%;
+                border: 2px solid v.$Very-pale-orange;
+
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

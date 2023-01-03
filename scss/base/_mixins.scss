@@ -18,3 +18,8 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

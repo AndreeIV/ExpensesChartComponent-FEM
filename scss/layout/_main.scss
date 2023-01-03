@@ -1,0 +1,65 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.spending {
+    display: flex;
+    flex-direction: column;
+
+    background-color: v.$Very-pale-orange;
+    border-radius: 6px;
+    padding: 0 2rem;
+
+    h1 {
+        margin: 2.5rem 0;
+        font-size: 2.5rem;
+    }
+
+    .graphics {
+        @include m.grid(7, 1rem);
+
+        color: v.$Medium-brown;
+        font-size: 1.5rem;
+        .day {
+            display: flex;
+            text-align: center;
+            justify-content: flex-end;
+
+            flex-direction: column;
+            .graph {
+                background-color: v.$Soft-red;
+                border-radius: 4px;
+
+                &:hover {
+                    background-color: rgba($color: v.$Soft-red, $alpha: .7);
+                }
+            }
+
+            .active {
+                background-color: v.$Cyan;
+                border-radius: 4px;
+
+                &:hover {
+                    background-color: rgba($color: v.$Cyan, $alpha: .7);
+                }
+            }
+
+            
+        }
+    }
+
+    .separator {
+        width: 100%;
+        height: 2px;
+
+        background-color: v.$Cream;
+        margin: 3rem 0;
+    }
+}
+.show {
+    background-color: v.$Dark-brown;
+    color: v.$Cream;
+
+    padding: .5rem;
+    border-radius: 3px;
+    margin-bottom: .5rem;
+}
